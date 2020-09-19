@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS examples</title>
+    <link href="../Assets/Stylesheets/commonStyles.css" rel="stylesheet">
+    <style>
+        div{
+            border: 10px dashed black;
+            padding: 15px;
+        }
+        #div1 {
+            background: saddlebrown;
+            background-clip: padding-box;
+        }
+        #div2 {
+            background: seagreen;
+            background-clip: border-box;
+        }
+        #div3 {
+            background: turquoise;
+            background-clip: content-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div-borders">
+        <h4>background-clip: border-box (this is default):</h4>
+        <div id="div1">
+            The background extends behind the border.
+        </div>
+
+        <h4>background-clip: padding-box:</h4>
+        <div id="div2">
+            The background extends to the inside edge of the border.
+        </div>
+
+        <h4>background-clip: content-box:</h4>
+        <div id="div3">
+            The background extends to the edge of the content box.
+        </div>
+    </div>
+</body>
+
+</html>

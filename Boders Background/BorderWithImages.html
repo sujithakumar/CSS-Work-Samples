@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS examples</title>
+    <link href="../Assets/Stylesheets/commonStyles.css" rel="stylesheet">
+    <style>
+        div {
+            margin: 20px;
+            padding: 20px;
+        }
+
+        img {
+            padding: 3px;
+        }
+
+        #div1 {
+            border: 2px solid red;
+        }
+
+        #div2 {
+            border: 8px solid transparent;
+            border-radius: 3px;
+            border-image-source: url('../Assets/Images/heart.gif');
+            border-image-slice: 20%;
+            border-image-width: 7px;
+            border-image-outset: 10px;
+            border-image-repeat: round;
+        }
+
+        #div3 {
+            border: 10px solid transparent;
+            padding: 15px;
+            border-image: url('../Assets/Images/heart.gif') round;
+        }
+        #div4 {
+            border: 10px solid transparent;
+            padding: 5px;
+            border-image: url('../Assets/Images/heart.gif') 20 round;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div-borders">
+        <div id="div1">
+            Original image
+            <img src="../Assets/Images/heart.gif" width="100" height="100">
+        </div>
+        <div id="div2">
+            Border image with all attributes set
+        </div>
+        <div id="div3">
+            Shorthand - corner images
+        </div>
+        <div id="div4">
+            Shorthand
+        </div>
+
+    </div>
+</body>
+
+</html>

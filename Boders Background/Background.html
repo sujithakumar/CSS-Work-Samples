@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS examples</title>
+    <link href="../Assets/Stylesheets/commonStyles.css" rel="stylesheet">
+    <style>
+        div {
+            margin: 10px;
+            padding: 4px;
+            border: 3px solid red
+        }
+        body{
+            background:whitesmoke url("../Assets/Images/icon.png") no-repeat left bottom;
+            background-size: 200px 200px;
+        }
+        #div1 {
+            background-color: lightblue;
+        }
+        #div2{
+            background-image: url("../Assets/Images/cat.gif");
+            background-repeat: no-repeat;
+            background-position: right top;
+            background-attachment:fixed;
+            overflow: auto;
+            height: 200px;
+        }
+        #div3{
+            background-image: url("../Assets/Images/cat.gif");
+            background-repeat: repeat-x;
+            background-size: 100px 100px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+   
+    <div class="div-borders">
+        body with shorthand
+        <div id="div1">
+            background-color
+        </div>
+        <div id="div2">
+            <pre>
+                <h4>Properties</h4>
+                background-image: image URL
+                background-repeat: no-repeat/repeat/repeat-x/repeat-y
+                background-position: right top/ left bottom
+                background-attachment: fixed;
+                    Image wil be fixed even wen u scroll
+                background-size: 200px 200px;
+                    fix the image ht and width
+                overflow: auto;
+                    to demonstrate the background-attachment
+                height: 200px;
+                to demonstrate the fixed position
+            </pre>
+        </div>
+        <div id="div3">
+            <pre>
+                image with junk info
+                to add
+                space to the 
+                webpage
+                image with junk info
+                to add
+                space to the 
+                webpage
+                image with junk info
+                to add
+                space to the 
+                webpage
+                image with junk info
+                to add
+                space to the 
+                webpage
+               
+            </pre>
+        </div>
+    </div>
+</body>
+
+</html>

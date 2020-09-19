@@ -1,0 +1,44 @@
+@import url("commonStyles.css");
+
+div {
+    margin: 10px;
+    outline: 10px;
+    height: 300px;
+    width: 500px;
+    border: 3px solid black;
+    padding: 20px;
+}
+
+.container {
+    background-color: pink;
+}
+
+.child {
+    background-color: palegreen;
+    position: relative;
+    top: 40px;
+    left: 40px;
+}
+
+.inner-child {
+    background-color: palegoldenrod;
+    overflow-y: auto;
+}
+
+.div1 {
+    background-color: plum;
+    width: 100px;
+    height: 100px;
+}
+.div2 {
+    background-color: skyblue;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    overflow: auto;
+}
+img {
+    position: fixed;
+}

@@ -1,0 +1,19 @@
+@import url('commonStyles.css');
+
+#display{
+    display : none;
+    border : 3px solid green;
+}
+
+#visbility{
+    visibility: hidden; 
+    border : 3px solid orange;
+}
+
+ li{
+    display : inline;
+}
+
+span{
+    display: block
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS examples</title>
+    <link href="../Assets/Stylesheets/commonStyles.css" rel="stylesheet">
+    <style>
+        div{
+            width: 500px;
+            height: 100px;         
+        }
+        .div1 {
+            border: 3px solid blue;
+        }
+
+        .div2 {  
+            border: 3px solid red;
+            padding: 10px;
+        }
+        .div3{
+            padding: 10px;
+            border: 3px solid greenyellow;
+            box-sizing: content-box
+        }
+        .div4{
+            padding: 10px;
+            border: 3px solid pink;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="div1">
+        width , height and border set 
+    </div>
+    <div class="div2">
+        width , height, border and padding set. Padding makes difference in size
+    </div>
+    
+    <br>
+    
+    <div class="div3">
+        width , height, border and padding set --> content box
+        <pre>
+            height & width are set to content 
+            The padding border margin are applied after that 
+        </pre>
+    </div>
+    <div class="div4">
+        width , height, border and padding set --> border box
+        <pre>
+            height & width are set to the box holding the content 
+            height & width are split equally with border + padding
+        </pre>
+    </div>
+
+</body>
+
+</html>
