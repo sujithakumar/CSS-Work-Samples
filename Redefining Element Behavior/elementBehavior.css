@@ -51,10 +51,13 @@
 ol>li{
     list-style-type: none;
     display: inline;
+    font-size: 20px;
+    padding: 20px;
 }
 
 ul{
     list-style-type: none;
     list-style-image: url("../Assets/Images/listimg.png");
     list-style-position: inside; 
+    
 }
