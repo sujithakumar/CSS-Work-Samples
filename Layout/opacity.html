@@ -6,25 +6,47 @@
     <title>CSS examples</title>
     <link href="../Assets/Stylesheets/commonStyles.css" rel="stylesheet">
     <style>
-        div{
-            text-align: center ;
+        div {
+            text-align: center;
             background-color: aqua;
-            padding : 10px;
+            padding: 10px;
             border: 2px solid red;
             margin: 20px;
             outline: 5px solid hotpink;
+        }
+
+        img:hover {
+            opacity: 0.3;
+            /* For IE8 and earlier */
+            filter: alpha(opacity=50);
+        }
+
+        .rgba {
+            background: rgb(200, 200, 100) !important;
+        }
+
+        .rgba:hover {
+            background: rgba(200, 200, 100, 0.2) !important;
         }
     </style>
 </head>
 
 <body>
+    <h4>hover to see results</h4>
+    <div>
+        <h1>Image Transparency</h1>
+        <p>The opacity property is often used together with the :hover selector to change the opacity on mouse-over:</p>
+        <img src="../Assets/Images/icon.png" alt="icon" width="170" height="100">
+        <img src="../Assets/Images/test.jpg" alt="test" width="170" height="100">
+        <img src="../Assets/Images/heart.jpg" alt="Italy" width="170" height="100">
+    </div>
 
-<div>
-    Hello 1
-</div>
-<div>
-    Hello 2
-</div>
+
+    <div class="rgba">
+        <h1>RGBA</h1>
+        <p> The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque).
+        </p>
+    </div>
 
 </body>
 

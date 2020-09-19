@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS examples</title>
+    <link href="../Assets/Stylesheets/commonStyles.css" rel="stylesheet">
+    <style>
+        div{
+            padding: 4px;
+            border: 1px solid pink;
+            margin: 12px;
+            text-align: center;
+        }
+        .common{
+            display: inline-block;
+            width: 300px;
+            height: 150px;
+        }
+      .div1{
+          background-image: linear-gradient(to left, skyblue, greenyellow);
+      }
+      .div2{
+          background-image: linear-gradient(60deg, skyblue, greenyellow);
+      }
+      .div3{
+          background-image: radial-gradient(pink, violet, greenyellow);
+      }
+      .div4{
+          background-image: radial-gradient(blue 10%, violet 30%, orange 60%);
+      }
+      .div5{
+        background-image: radial-gradient(circle, pink, violet, greenyellow);
+      }
+      .div6{
+        background-image:radial-gradient(closest-side at 60% 55%,pink, violet, greenyellow);
+      }
+    </style>
+</head>
+
+<body>
+
+    <div class="div-borders">
+        <div>
+            <h4>Linear</h4>
+            <div class="div1">
+                linear-gradient(to left, skyblue, greenyellow);
+            </div>
+            <div class="div2">
+                linear-gradient(60deg, skyblue, greenyellow);
+            </div>
+        </div>
+        <div>
+            <h4>Radial</h4>
+            <div class="common div3">
+                radial-gradient(pink, violet, greenyellow);
+            </div>
+            <div class="common div4">
+                radial-gradient(blue 10%, violet 30%, orange 60%);
+            </div>
+            <div class="common div5">
+                radial-gradient(circle, pink, violet, greenyellow);
+            </div>
+            <div class="common div6">
+                radial-gradient(closest-side at 60% 55%, pink, violet, greenyellow);
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

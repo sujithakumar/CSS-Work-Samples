@@ -6,25 +6,61 @@
     <title>CSS examples</title>
     <link href="../Assets/Stylesheets/commonStyles.css" rel="stylesheet">
     <style>
-        div{
-            text-align: center ;
-            background-color: aqua;
+        .common {
+            position: relative;
+            border: 6px inset red;
+            margin: 10px;
+            outline: 10px;
+            width: 100px !important;
+            height: 50px;
+            justify-content: center;
             padding : 10px;
-            border: 2px solid red;
-            margin: 20px;
-            outline: 5px solid hotpink;
+            box-sizing: border-box;
+
         }
+
+        #div1 {
+            background-color: yellow;
+            top: 50px;
+            left: 60px;
+            z-index:-3;
+        }
+
+        #div2 {
+            background-color: pink;
+            top: 25px;
+            left: 30px;
+            z-index: auto;
+        }
+
+        #div3 {
+            background-color: paleturquoise;
+            z-index: 2;
+        }
+
     </style>
 </head>
 
 <body>
 
-<div>
-    Hello 1
-</div>
-<div>
-    Hello 2
-</div>
+
+    <h4>works with positions</h4>
+    <h4>Change z-index values to see the difference</h4>
+    <div style="display:block" class="div-borders">
+        <div class="common" id="div1">
+            <strong>one</strong>
+        </div>
+
+        <div class="common" id="div2">
+            <strong>two</strong>
+        </div>
+
+        <div class="common" id="div3">
+            <strong>three</strong>
+        </div>
+    </div>
+
+
 
 </body>
 
