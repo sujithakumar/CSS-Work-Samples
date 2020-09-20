@@ -1,0 +1,48 @@
+@import url("../Stylesheets/commonStyles.css");
+
+p,
+a {
+    display: block !important;
+    padding: 3px !important;
+}
+
+a {
+    color: black;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+h3 {
+    margin: 10px;
+    padding: 5px;
+}
+
+h3[title] {
+    color: blueviolet;
+}
+
+h3[title="head1"] {
+    text-decoration: overline;
+}
+
+a[href~="www.google.com"] {
+    font-size: 25px;
+}
+
+a[href*="google"] {
+    background-color: pink;
+}
+
+a[href^="https"] {
+    box-shadow: 3px 3px palegreen;
+}
+
+a[href$=".com"] {
+   border: 6px dotted forestgreen;
+   padding : 10px;
+}
+
+h3[class|="one"]{
+  color:orangered;
+  font-weight: bold;
+}

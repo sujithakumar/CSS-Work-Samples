@@ -13,3 +13,11 @@ p{
 #idSelector{
    color:red;
 }
+
+.P,h2,h3{
+   border: 4px dotted orangered;
+   padding : 3px ;
+   font-size: larger;
+   color: green;
+   font-weight: normal;
+}
