@@ -1,0 +1,39 @@
+@import url('styles.css');
+
+:root{
+    font-size: 25px;
+}
+span,i{
+    display: none;
+    border:4px solid greenyellow;
+    padding:5px;
+}
+li:hover span{
+    display:block;
+}
+li:hover i{
+    display:block;
+}
+
+::selection{
+    background-color: palegreen;
+}
+::spelling-error{
+    text-decoration: underline olive;
+}
+
+p::first-line{
+    color:orangered
+}
+p::first-letter{
+    font-size: 200%;
+    color: #8A2BE2;
+}
+
+span::after{
+    content:"-sweety";
+}
+
+i::before{
+    content: "what?";
+}

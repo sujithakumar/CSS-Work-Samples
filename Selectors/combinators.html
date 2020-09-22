@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Selectors</title>
+    <link rel="stylesheet" href="../Assets/Stylesheets/styles.css">
+    <style>
+        span,
+        a {
+            display: block;
+            padding: 5px;
+            margin: 3px;
+            font-weight: bold;
+        }
+
+        div p {
+            color: hotpink;
+        }
+
+        div>span {
+            border: 2px solid yellow;
+        }
+
+        div+span {
+            background-color: violet;
+        }
+
+        div~p {
+            background-color: palegreen;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="div-borders">
+        <h4>Combinators</h4>
+        <div class="div-borders">
+            <details>
+                <summary>Descendant Selector (space)</summary>
+                <i>matches all elements that are descendants of a specified element.</i>
+                <span> div p {
+                    color: hotpink;
+                    }
+                </span>
+            </details>
+            <details>
+                <summary>child selector (>)</summary>
+                <i> selects all elements that are direct children of a specified element.</i>
+                <span> div>span {
+                    border: 2px solid yellow;
+                    } </span>
+            </details>
+            <details>
+                <summary>adjacent sibling selector (+)</summary>
+                <i> Selects element that is the adjacent/first sibling of a specified element. Sibling elements must
+                    have the same parent element, and "adjacent" means "immediately following".</i>
+                <span> div+span{
+                    background-color: violet;
+                    } </span>
+                <i>Span, that immediately follows div will be selected</i>
+            </details>
+            <details>
+                <summary>general sibling selector (~) </summary>
+                <i> Selects all the elements that are siblings of the specified elements.</i>
+                <span> div~p {
+                    background-color: palegreen;
+                    } </span>
+                <i>all P element that are siblings of div</i>
+            </details>
+
+
+
+        </div>
+    
+        <div class="div-borders">
+            outer DIV
+            <p>Para 1</p>
+            <div>div 1</div>
+            <p>Para 2
+                <span>Span inside para
+                    <a href="">anchor inside span</a>
+                    <span>span inside span</span>
+                </span>
+            </p>
+
+            <div>
+                div inside div
+                <p>para inside div</p>
+            </div>
+            <!-- <b>test</b> -->
+            <span>Span 1</span>
+            <span>Span 2
+                <a href="">anchor inside span2</a>
+                <span>span inside span2</span>
+            </span>
+
+            <p>Para 3</p>
+            <p>para 4</p>
+
+        </div>
+    </div>
+</body>
+
+</html>

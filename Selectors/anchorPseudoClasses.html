@@ -7,6 +7,7 @@
     <style>
         a {
             color: hotpink;
+            display: block;
         }
 
         /* unvisited link */
@@ -29,6 +30,11 @@
             color: blue;
         }
 
+        a.me:hover{
+            color:orange;
+        }
+        
+
         /* a {
         text-decoration: none;
         } */
@@ -36,15 +42,19 @@
 </head>
 
 <body>
-
-
     <div class="div-borders">
         <h4> check the changes on link visit ,hover,active  </h4>
 
         <p>
 
             <b>
-                <a href="https://www.google.com" target="_blank">This is a link</a>
+                <a href="https://www.google.com" target="_blank" class="me">This is a link 1</a>
+            </b>
+            <b>
+                <a href="https://www.google.com" target="_blank" class="he">This is a link 2</a>
+            </b>
+            <b>
+                <a href="https://www.google.com" target="_blank" class="she">This is a link 3</a>
             </b>
         </p>
 

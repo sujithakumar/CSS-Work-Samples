@@ -1,4 +1,4 @@
-:root{
+:root {
     margin: auto;
     /* justify-content: center; */
     /* text-align: center; */
@@ -16,13 +16,9 @@
     box-shadow: 3px 3px 3px grey;
     margin: 15px;
 }
-
-p{
-    padding: 10px;
-}
-
-h4{
-    color:orangered;
-    text-decoration: underline;
-    font-weight: bold;
+summary{
+    font-weight: bolder;
+    padding : 9px;
+    margin:2px;
+    outline: 3px
 }

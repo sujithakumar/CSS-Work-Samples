@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form</title>
+    <link href="../Assets/Stylesheets/inputAttributes.css" rel="stylesheet">
+</head>
+
+<body>
+    <form action="">
+        Name: <input type="text" name="name" />
+        <br><br>
+
+        Sur Name: <input type="text" name="name" autofocus="on" required />
+        <br><br>
+
+        Password: <input type="text" name="password" value="readonly" readonly  required/>
+        <br><br>
+
+        Password-re: <input type="text" name="age" value="disabled" disabled required />
+        <br><br>
+
+        Modify the number less than 5 or greater than 10 to see the changes
+        <br>
+        Age: <input type="number" min="5" max="10" value="7">
+        <br><br>
+
+        Price: <input type="range" min="0" max="20" value="10" id="sliders" step="1">
+        <br><br>
+
+        Email: <input type="email" value="" >
+        <br><br>
+
+        Hobbies:
+        <input type="checkbox" name="Playing" value="1"> Playing
+        <input type="checkbox" name="Sleeping" value="2"> Sleeping
+        <input type="checkbox" name="singing" value="3" checked> singing
+        <input type="checkbox" name="Dancing" value="4"> Dancing
+        <br><br>
+
+        select one hobby you like most:
+        <input type="radio" name="Hobbies" value="on"> Playing
+        <input type="radio" name="Hobbies" value="on" checked="checked"> Sleeping
+        <input type="radio" name="Hobbies" value="on"> singing
+        <input type="radio" name="Hobbies" value="on"> Dancing
+        <br><br>
+
+        
+    </form>
+</body>
+
+</html>

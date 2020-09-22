@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .centerDIv {
+            margin: auto;
+            padding: 0;
+            border: 3px solid cornflowerblue;
+            height:300px;
+            width:400px;
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        p {
+            height: 150px;
+            width: 150px;
+            display: none;
+            border: 3px solid red;
+            text-align: center;
+            background-color: yellow;
+            float:right
+        }
+
+        div:hover p {
+            display: block;
+            color:violet
+        }
+    </style>
+</head>
+
+<body>
+    <div class="centerDIv">
+        Hover over me to see the tooltip
+        <p>
+            I am your tooltip!
+            <i>Have a great day</i>
+        </p>
+    </div>
+
+    <div class="centerDIv">
+        Hover over me : I wont show anything new (Eeeeeeeee)
+    </div>
+</body>
+
+</html

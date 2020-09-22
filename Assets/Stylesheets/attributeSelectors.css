@@ -46,3 +46,8 @@ h3[class|="one"]{
   color:orangered;
   font-weight: bold;
 }
+
+
+img[data-heading-type="heading"] { 
+    border:2px solid coral;
+ }
