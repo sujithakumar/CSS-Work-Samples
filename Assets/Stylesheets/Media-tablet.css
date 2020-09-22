@@ -1,0 +1,20 @@
+/* Portrait tablets */
+@media only screen and (min-width: 600px) {
+    .div-borders{
+        background-color: blue;
+    }
+    p{
+        display: none;
+    }
+}
+/* Landscape Tablets */
+@media only screen and (min-width: 768px) and (orientation: landscape)  {
+    .div-borders{
+        background-color: yellow;
+    }
+    p{
+        display: block;
+    }
+    
+}
+

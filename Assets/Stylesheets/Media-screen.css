@@ -1,0 +1,18 @@
+@import url('commonStyles.css');
+@import url('Media-Phone.css');
+@import url('Media-tablet.css');
+
+.div-borders{
+    color: black;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+@media only screen and (min-width: 992px) {
+    .div-borders{
+        background-color: orange;
+    }
+    p{
+        display: block;
+    }
+}
