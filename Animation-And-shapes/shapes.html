@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../Assets/Stylesheets/commonStyles.css">
+    <style>
+        div {
+            background-color: blueviolet;
+            border: 4px solid black;
+        }
+
+        div:hover {
+            background-color: yellowgreen;
+            opacity: 0.5;
+        }
+
+        .div-borders {
+            background-color: whitesmoke !important;
+        }
+
+        .square {
+            height: 100px;
+            width: 100px;
+        }
+
+        .rect {
+            height: 100px;
+            width: 500px;
+        }
+
+        .circle {
+            border-radius: 200px;
+        }
+        .parallel{
+            transform: skew(20deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div-borders">
+        <h5>Square</h5>
+        <div class="square"></div>
+        <h5>Rectangle</h5>
+        <div class="rect"></div>
+        <h5>circle</h5>
+        <div class="square circle"></div>
+        <h5>Parallelogram CSS</h5>
+        <div class="rect parallel"></div>
+    </div>
+</body>
+
+</html>
