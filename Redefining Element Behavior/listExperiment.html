@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../Assets/Stylesheets/styles.css">
+    <style>
+        li {
+            border-left: 5px solid red;
+            line-height: 60px;
+            height: 80px;
+            padding: 3px;
+            margin: 10px;
+            background-color: aqua;
+
+        }
+
+        ul {
+            list-style: none;
+        }
+
+
+        li+li::before {
+            color: green;
+            content: "*";
+            font-size: 27px;
+            position: relative;
+            right: 12px;
+            top: -33px;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div-borders">
+        <ul>
+            <li>
+
+                This is
+                sentance
+                one
+
+            </li>
+            <li>
+
+                This is
+                sentance
+                two
+
+            </li>
+            <li>
+
+                This is
+                sentance
+                three
+
+            </li>
+            <li>
+
+                This is
+                sentance
+                four
+
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

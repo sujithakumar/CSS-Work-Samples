@@ -1,0 +1,73 @@
+@import url("styles.css");
+
+div{
+    border: 1px solid green;
+    margin: 2px;
+    width:50px;
+}
+
+/* normal */
+.div-borders {
+    width: 350px;
+    height: 400px;
+    justify-content: center; 
+}
+
+/* outerDiv */
+#flexi {
+    background-color: whitesmoke;
+    width:1000px;
+    margin: 6px;
+    padding: 4px;
+    display: flex;
+    justify-content: space-evenly;  
+    border: 4px solid pink;
+    flex-grow: 8;
+}
+
+/* col Layout */
+.flex-container-col {  
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap; 
+    /* will not wrap on resize */
+    justify-content: flex-end;
+    /* will not reflect ->col layout */
+    align-items:flex-end;
+    align-content: center;
+}
+
+/* row - default flex layout */
+.flex-container-row {
+    background-color: whitesmoke;
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap; /*will wrap on resize */
+    justify-content: flex-start;
+    align-items:flex-end;
+}
+
+.flex-container-row-out {
+    background-color: whitesmoke;
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap-reverse;
+     /*will wrap on resize */
+    justify-content: baseline;
+    align-items:flex-end;
+    /* since wraped reverse, it behaves this way */
+    align-content: space-between;
+    /* adds space between the rows */
+}
+
+/* .box{
+   flex-grow: 8;
+}
+
+.box1{
+    flex-shrink:1;
+}
+
+.box2{
+    flex-basis: fill;
+} */

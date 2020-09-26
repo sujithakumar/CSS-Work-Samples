@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../Assets/Stylesheets/styles.css">
+    <style>
+        li {
+            border-left: 5px solid red;
+            border-bottom-left-radius: 8px;
+            border-top-left-radius: 8px;
+            line-height: 60px;
+            height: 80px;
+            padding: 3px;
+            margin: 19px;
+            background-color: pink;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .liDiv {
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            border: 5px solid greenyellow;
+            position: relative;
+            right: 16px;
+            top: -22px;
+            float: left;
+        }
+
+        li:first-child .liDiv {
+            height: 10px;
+            width: 10px;
+            position: relative;
+            right: 16px;
+            top: -22px;
+            float: left;
+            border: 5px solid transparent;
+            ;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div-borders">
+        <ul>
+            <li>
+                <div class="liDiv"></div>
+                This is
+                sentance
+                one
+
+            </li>
+            <li>
+                <div class="liDiv"></div>
+                This is
+                sentance
+                two
+
+            </li>
+            <li>
+                <div class="liDiv"></div>
+                This is
+                sentance
+                three
+
+            </li>
+            <li>
+                <div class="liDiv"></div>
+                This is
+                sentance
+                four
+
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

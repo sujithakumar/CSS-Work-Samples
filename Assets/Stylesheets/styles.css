@@ -1,18 +1,17 @@
 :root {
     margin: auto;
-    /* justify-content: center; */
-    /* text-align: center; */
     font-family: 'Times New Roman', Times, serif;
-    font-size: medium;
+    font-size: 20px;
     color:black;
-    /* the content will be centered on devices wider than 500px */
-    max-width: 800px;
+    max-width: 900px;
     padding: 20px;
+    box-sizing: border-box;
+  
 }
 
 .div-borders {
     padding: 12px;
-    border: 2px solid grey;
+    border: 3px outset grey;
     box-shadow: 3px 3px 3px grey;
     margin: 15px;
 }
@@ -21,4 +20,9 @@ summary{
     padding : 9px;
     margin:2px;
     outline: 3px
+}
+
+h6{
+    color:olivedrab;
+   text-decoration: underline;
 }
