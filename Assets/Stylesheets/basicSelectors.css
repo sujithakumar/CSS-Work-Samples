@@ -1,24 +1,55 @@
 @import url('../Stylesheets/commonStyles.css');
 
-*{
+* {
    font-style: italic;
-   font-weight:bold;
-   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
 }
 
-p{
-   color:greenyellow;
+#idSelector {
+   color: red;
 }
 
-#idSelector{
-   color:red;
-}
-
-.P,h2,h3{
+.P,
+h2,
+h3 {
    border: 4px dotted orangered;
-   padding : 3px ;
+   padding: 3px;
    font-size: larger;
    color: green;
    font-weight: normal;
 }
 
+span,
+a {
+   display: block;
+   padding: 5px;
+   margin: 3px;
+}
+
+em{
+   all: unset !important;
+}
+
+/* combinators 
+
+Descendant Selector (space) */
+
+div span{
+   border: 2px solid yellowgreen;
+}
+
+/* child selector (>) */
+p>span{
+   color:blue;
+}
+
+/* adjacent sibling selector (+) */
+strong+section{
+   background-color: aquamarine;
+}
+
+/* general sibling selector (~) */
+
+span ~ span{
+   background-color: brown;
+}

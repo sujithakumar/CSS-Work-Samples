@@ -3,32 +3,7 @@
 
 <head>
     <title>Selectors</title>
-    <link rel="stylesheet" href="../Assets/Stylesheets/styles.css">
-    <style>
-        span,
-        a {
-            display: block;
-            padding: 5px;
-            margin: 3px;
-            font-weight: bold;
-        }
-
-        div p {
-            color: hotpink;
-        }
-
-        div>span {
-            border: 2px solid yellow;
-        }
-
-        div+span {
-            background-color: violet;
-        }
-
-        div~p {
-            background-color: palegreen;
-        }
-    </style>
+    <link rel="stylesheet" href="../Assets/Stylesheets/basicSelectors.css">
 </head>
 
 <body>
@@ -38,66 +13,81 @@
         <div class="div-borders">
             <details>
                 <summary>Descendant Selector (space)</summary>
-                <i>matches all elements that are descendants of a specified element.</i>
-                <span> div p {
-                    color: hotpink;
+                <em>matches all elements that are descendants of a specified element.</em>
+                <span>
+                    div span{
+                    border: 2px solid yellowgreen;
                     }
                 </span>
             </details>
             <details>
                 <summary>child selector (>)</summary>
-                <i> selects all elements that are direct children of a specified element.</i>
-                <span> div>span {
-                    border: 2px solid yellow;
-                    } </span>
+                <em> selects all elements that are children of a specified element.</em>
+                <span>
+                    p>span{
+                    color:blue;
+                    }
+                </span>
             </details>
             <details>
                 <summary>adjacent sibling selector (+)</summary>
-                <i> Selects element that is the adjacent/first sibling of a specified element. Sibling elements must
-                    have the same parent element, and "adjacent" means "immediately following".</i>
-                <span> div+span{
-                    background-color: violet;
-                    } </span>
-                <i>Span, that immediately follows div will be selected</i>
+                <em> Selects element that is the adjacent/first sibling of a specified element. Sibling elements must
+                    have the same parent element, and "adjacent" means "immediately following".</em>
+                <span>
+                    strong+section{
+                    background-color: aquamarine;
+                    }
+                </span>
             </details>
             <details>
                 <summary>general sibling selector (~) </summary>
-                <i> Selects all the elements that are siblings of the specified elements.</i>
-                <span> div~p {
-                    background-color: palegreen;
-                    } </span>
-                <i>all P element that are siblings of div</i>
-            </details>
-
-
-
-        </div>
-    
-        <div class="div-borders">
-            outer DIV
-            <p>Para 1</p>
-            <div>div 1</div>
-            <p>Para 2
-                <span>Span inside para
-                    <a href="">anchor inside span</a>
-                    <span>span inside span</span>
+                <em> Selects all the elements that are siblings of the specified elements.</em>
+                <span>
+                    span ~ span{
+                    background-color: brown;
+                    }
                 </span>
-            </p>
+            </details>
+        </div>
 
-            <div>
-                div inside div
-                <p>para inside div</p>
-            </div>
-            <!-- <b>test</b> -->
-            <span>Span 1</span>
-            <span>Span 2
-                <a href="">anchor inside span2</a>
-                <span>span inside span2</span>
-            </span>
+        <div class="div-borders">
+            <header>Default elements with no css</header>
+            <pre>
+            <div>Div</div>
+            <p>Paragraph</p>
+            <section>section</section>
+            <span>span</span>
+            </pre>
+        </div>
 
-            <p>Para 3</p>
-            <p>para 4</p>
-
+        <div class="div-borders">
+            <strong> outer div</strong>
+            <section>section 1 inside outer div
+                <p>Para inside section 1</p>
+            </section>
+            <section>section 2 inside outer div</section>
+            <section>section 3 inside outer div
+                <p>
+                    Para inside section 3
+                    <span> span inside para of section 3</span>
+                </p>
+            </section>
+            <section>section 4 inside outer div
+                <p>
+                    Para 1 inside section 4
+                    <span> span inside para of section 4</span>
+                    <span>span 2 inside para 1 of section 4</span>
+                </p>
+                <p>
+                    Para 2 inside section 4
+                    <a href="#">dummy link</a>
+                    <span> span 1 inside para 2 of section 4
+                        <span>span 2 inside span 1 para 2 of section 4 </span>
+                    </span>
+                </p>
+            </section>
+            <strong>dummy strong element</strong>
+            <section>dummy section</section>
         </div>
     </div>
 </body>
