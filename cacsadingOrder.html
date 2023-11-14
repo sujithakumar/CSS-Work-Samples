@@ -1,0 +1,70 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cascading order</title>
+    <link rel="stylesheet" href="/Assets/Stylesheets/commonStyles.css">
+    <style>
+        header{
+            font-weight: bold;
+        }
+        p{
+            background-color: blue;
+        }
+        h1{
+            background-color: yellow !important;
+        }
+    </style>
+</head>
+
+<body>
+   <div class="div-borders">
+    <header>Element with multiple styles</header>
+    <pre>
+        style = "background-color: red; background-color: aqua;background-color: pink;"
+        <p style="background-color: red; background-color: aqua;background-color: pink;">The last bg color is applied</p>
+    </pre>
+   </div>
+   <div class="div-borders">
+    <header>Element with inline style is preffered over external or default</header>
+    <pre>
+        <strong>//inline</strong>
+        style = "background-color: red;
+
+        <strong>//external</strong>
+        p{
+            background-color: blue;
+        }
+
+        <strong>//default</strong>
+        transparent BG
+        <p style="background-color: red;"> inline style is applied</p>
+    </pre>
+   </div>
+
+   <div class="div-borders">
+    <header>!important has higher priority over inline, external or default styles</header>
+    <pre>
+        <strong>//inline</strong>
+        style = "background-color: red;
+
+        <strong>//external</strong>
+        h1{
+            background-color: yellow !important;
+        }
+
+        <strong>//default</strong>
+        transparent BG
+        <h1 style="background-color: red;"> !important style is applied</h1>
+    </pre>
+   </div>
+</body>
+
+</html>
+
+
+
+
