@@ -23,38 +23,38 @@ span:first-child {
 }
 /* The first p child of every parent ele ll b styled */
 p:first-of-type {
-   border: 4px solid brown;
-}
-
-/* The last span child element(with its child) will be styled */
-span:last-child {
-    color: green;
-}
-/* The last span child of every parent ele ll b styled */
-span:last-of-type {
-   border: 4px solid greenyellow;
-}
-
-/* element li as 3rd child from top of its parent */
-li:nth-child(3){
-    background-color: darkcyan;
-}
-
-/* element li as 3rd child from bottom of its parent */
-li:nth-last-child(3){
-    background-color: hotpink;
-}
-/* element li as 2nd child from bottom */
-li:nth-last-of-type(2){
-    border: 3px dotted brown;
-}
-
-/* enumerating */
-/* selects every 2nd child element from top */
-li:nth-child(2n){
-   color:orange;
-}
-
-li:nth-last-child(3n){
-    cursor: help;
-}
+    border: 4px solid brown;
+ }
+ 
+ /* The last span child element(with its child) will be styled */
+ span:last-child {
+     color: green;
+ }
+ /* The last span child of every parent ele ll b styled */
+ span:last-of-type {
+    border: 4px solid greenyellow;
+ }
+ 
+ /* element li as 3rd child from top of its parent */
+ li:nth-child(3){
+     background-color: darkcyan;
+ }
+ 
+ /* element li as 3rd child from bottom of its parent */
+ li:nth-last-child(3){
+     background-color: hotpink;
+ }
+ /* element li as 2nd child from bottom */
+ li:nth-last-of-type(2){
+     border: 3px dotted brown;
+ }
+ 
+ /* enumerating */
+ /* selects every 2nd child element from top */
+ li:nth-child(2n){
+    color:orange;
+ }
+ 
+ li:nth-last-child(3n){
+     cursor: help;
+ }
