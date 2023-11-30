@@ -4,34 +4,160 @@
 <head>
     <meta charset="UTF-8">
     <title>CSS examples</title>
-    <link href="../Assets/Stylesheets/layoutStyles.css" rel="stylesheet">
+    <style>
+        .a {
+            padding: 10px;
+            margin: 5px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .flex {
+            border: 3px solid red;
+            width: 200px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        header {
+            font-size: 30px;
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        .common {
+            border: 1px solid grey;
+            width: 150px;
+            margin: 10px;
+            border-radius: 10px;
+            text-align: center;
+            line-height: 150px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        #div-1 {
+            background-color: pink;
+        }
+
+        #div-2 {
+            background-color: aqua;
+        }
+
+        #div-3 {
+            background-color: coral;
+        }
+
+        /* static position */
+        .static #div-2 {
+            position: static;
+        }
+
+        /* relative position */
+        .relative #div-2 {
+            position: relative;
+            top: 30px;
+            left: 30px;
+        }
+
+        /* Fixed position */
+        .fixed #div-2 {
+            position: fixed;
+        }
+
+        /* Absolute position 1 */
+        .absolute #div-2 {
+            position: absolute;
+        }
+
+        .container {
+            position: relative;
+            background-color: burlywood;
+            width: 200px;
+            height: 200px;
+        }
+
+        .absolute2 #div-2 {
+            position: absolute;
+        }
+
+        /* sticky */
+        .sticky {
+            overflow: auto;
+            border: 3px solid green;
+            height: 300px;
+            width: 200px;
+            margin: 50px
+        }
+
+        .sticky #div-2 {
+            position: sticky;
+            position: -webkit-sticky;
+            top: 0px;
+        }
+    </style>
 
 </head>
 
 <body>
-    <h4>Change the position attributes and check the results</h4>
 
-    <div class="container">main container
+    <div class="a">
 
-        <div class="child"> child container
-
-            <div class="inner-child"> inner child
-                <div class="div1">
-                    <img src="../Assets/Images/cat.gif" alt="Heart" style="width:100px;height:100px;">
-                </div>
-                <div class="div2">
-                    position: absolute; should be accoompanied by 
-                    <p>
-                        top , left or any such attributes
-                    </p>
-                </div>
-            </div>
-
+        <div class="flex static">
+            <header>Static </header>
+            <div id="div-1" class="common">1</div>
+            <div id="div-2" class="common">2</div>
+            <div id="div-3" class="common">3</div>
         </div>
 
+        <div class="flex relative">
+            <header>Relative </header>
+            <div id="div-1" class="common">1</div>
+            <div id="div-2" class="common">2</div>
+            <div id="div-3" class="common">3</div>
+        </div>
+
+        <div class="flex fixed">
+            <header>Fixed </header>
+            <div id="div-1" class="common">1</div>
+            <div id="div-2" class="common">2</div>
+            <div id="div-3" class="common">3</div>
+        </div>
+
+        <div class="flex absolute">
+            <header>Absolute 1</header>
+            <div id="div-1" class="common">1</div>
+            <div id="div-2" class="common">2</div>
+            <div id="div-3" class="common">3</div>
+        </div>
+
+        <div class="flex absolute2">
+            <header>Absolute 2 with relative</header>
+            <div id="div-1" class="common">1</div>
+            <div class="container">
+                <div id="div-2" class="common">2</div>
+            </div>
+            <div id="div-3" class="common">3</div>
+        </div>
     </div>
 
-
+    <div class="sticky">
+        <header>Sticky</header>
+        <div class="common">**</div>
+        <div class="common">**</div>
+        <div class="common">**</div>
+        <div class="common">**</div>
+        <div class="common">**</div>
+        <div id="div-1" class="common">1</div>
+        <div id="div-2" class="common">2</div>
+        <div id="div-3" class="common">3</div>
+        <div class="common">**</div>
+        <div class="common">**</div>
+        <div class="common">**</div>
+        <div class="common">**</div>
+        <div class="common">**</div>
+    </div>
 
 
 </body>
